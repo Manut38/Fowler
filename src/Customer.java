@@ -7,7 +7,7 @@ class Customer {
 
     public Customer(String newName) {
         name = newName;
-    };
+    }
 
     public void addRental(Rental rental) {
         rentals.addElement(rental);
@@ -16,11 +16,11 @@ class Customer {
         // add bonus for a two day new release rental
         if ((rental.getMovie().getPriceCode() == Movie.PriceCodes.NEW_RELEASE) && rental.getDaysRented() > 1)
             frequentRenterPoints++;
-    };
+    }
 
     public String getName() {
         return name;
-    };
+    }
 
     public String statement() {
         double totalAmount = 0;
